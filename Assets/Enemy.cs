@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             ScoreManager.instance.AddScore(10); // เพิ่มคะแนน
+            ScoreManager.instance.enemyKillCount++; // นับจำนวนศัตรูที่ถูกฆ่า
 
             if (explosionPrefab != null)
             {
