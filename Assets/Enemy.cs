@@ -3,6 +3,7 @@
 public class Enemy : MonoBehaviour
 {
     public float speed = 3f;
+    public GameObject explosionPrefab; // เอฟเฟกต์ระเบิด
 
     void Update()
     {
@@ -13,12 +14,20 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject); // ทำลายผู้เล่น
-            Destroy(gameObject); // ทำลายศัตรู
+            // TODO: เรียกฟังก์ชัน Game Over แทนการลบผู้เล่นเลย
+            GameManager.instance.GameOver();
         }
         if (other.CompareTag("Bullet"))
         {
-            ScoreManager.instance.AddScore(10); // เพิ่มคะแนน 10
+            ScoreManager.instance.AddScore(10); // เพิ่มคะแนน
+
+            if (explosionPrefab != null)
+            {
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity); // เอฟเฟกต์ระเบิด
+            }
+
+            Destroy(gameObject); // ทำลายศัตรู
+            Destroy(other.gameObject); // ทำลายกระสุน
         }
     }
 }
