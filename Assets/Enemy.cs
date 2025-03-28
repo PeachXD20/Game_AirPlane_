@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI; // ใช้ UI สำหรับแถบเลือด
 
 public class Enemy : MonoBehaviour
 {
@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour
     public float maxHealth = 20f; // เลือดสูงสุดของศัตรูทั่วไป
     private float currentHealth; // เลือดปัจจุบัน
 
+    public Image healthBar; // แถบเลือด UI ของศัตรู
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -33,6 +35,12 @@ public class Enemy : MonoBehaviour
             maxHealth = 800f; // เลือดของบอสมากกว่าปกติ
         }
         currentHealth = maxHealth; // ตั้งค่าเลือดเริ่มต้น
+
+        // อัปเดตแถบเลือดเริ่มต้น
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = currentHealth / maxHealth;
+        }
     }
 
     void Update()
@@ -78,14 +86,25 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.instance.GameOver(); // จบเกมถ้าชนผู้เล่น
+            // เรียก GameOver เมื่อผู้เล่นชนกับศัตรู
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.GameOver();
+            }
         }
         if (other.CompareTag("Bullet"))
         {
             TakeDamage(20); // กระสุนลดเลือด 20 หน่วย
             Destroy(other.gameObject); // ทำลายกระสุน
+
+            // เพิ่มคะแนนเมื่อศัตรูถูกทำลาย
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.AddScore(100); // เพิ่มคะแนน 100
+            }
         }
     }
+
 
     // ฟังก์ชันลดเลือด
     public void TakeDamage(float damage)
@@ -94,7 +113,14 @@ public class Enemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            currentHealth = 0;
             Die();
+        }
+
+        // อัปเดตแถบเลือดทุกครั้งที่รับความเสียหาย
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = currentHealth / maxHealth;
         }
     }
 
