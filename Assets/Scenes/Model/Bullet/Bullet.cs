@@ -11,9 +11,24 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        // ตรวจสอบว่ากระสุนชนกับผู้เล่น
+        if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject); // ทำลายศัตรู
+            if (gameObject.CompareTag("EnemyBullet"))
+            {
+                other.GetComponent<PlayerController>().TakeDamage(10f); // ลดเลือด 200
+                Destroy(gameObject); // ทำลายกระสุน
+            }
+        }
+
+        // ตรวจสอบว่ากระสุนชนกับศัตรู
+        if (other.CompareTag("Enemy") || other.CompareTag("Boss"))
+        {
+            if (other.CompareTag("Boss")) // ถ้าเป็นบอส
+            {
+                other.GetComponent<Boss>().TakeDamage(20f); // ลดเลือดบอส 100
+            }
+
             Destroy(gameObject); // ทำลายกระสุน
         }
     }

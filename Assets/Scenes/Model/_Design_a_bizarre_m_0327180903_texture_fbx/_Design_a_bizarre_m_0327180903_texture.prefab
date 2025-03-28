@@ -1,5 +1,160 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1360041776592398552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3579719714424574885}
+  m_Layer: 0
+  m_Name: firePoint_Boss2
+  m_TagString: Boss
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3579719714424574885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360041776592398552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00321, y: -0.0028, z: 0.01051}
+  m_LocalScale: {x: 0.0016793492, y: 0.0016793492, z: 0.0016793492}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820103437927504964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4931176975125431972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4686686350686770624}
+  m_Layer: 0
+  m_Name: firePoint_Boss3
+  m_TagString: Boss
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4686686350686770624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4931176975125431972}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00471, y: 0.00093, z: 0.00795}
+  m_LocalScale: {x: 0.0016793492, y: 0.0016793492, z: 0.0016793492}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820103437927504964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5838787657935091205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3474571446342165937}
+  m_Layer: 0
+  m_Name: firePoint_Boss4
+  m_TagString: Boss
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3474571446342165937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838787657935091205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00442, y: 0.00093, z: 0.00795}
+  m_LocalScale: {x: 0.0016793492, y: 0.0016793492, z: 0.0016793492}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820103437927504964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5997441600066642823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3189467906791878707}
+  m_Layer: 0
+  m_Name: firePoint_Boss5
+  m_TagString: Boss
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3189467906791878707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5997441600066642823}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00005, y: 0.0003, z: 0.01394}
+  m_LocalScale: {x: 0.0016793492, y: 0.0016793492, z: 0.0016793492}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820103437927504964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8332304501842603288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8656228209747598092}
+  m_Layer: 0
+  m_Name: firePoint_Boss1
+  m_TagString: Boss
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8656228209747598092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332304501842603288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00294, y: -0.0028, z: 0.01051}
+  m_LocalScale: {x: 0.0016793492, y: 0.0016793492, z: 0.0016793492}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820103437927504964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3641444708113693615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,8 +223,117 @@ PrefabInstance:
       propertyPath: m_Name
       value: _Design_a_bizarre_m_0327180903_texture
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8656228209747598092}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3579719714424574885}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4686686350686770624}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3474571446342165937}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3189467906791878707}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6397862015559054846}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7410936270667658946}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2435628738167742342}
   m_SourcePrefab: {fileID: 100100000, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+--- !u!4 &3820103437927504964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+  m_PrefabInstance: {fileID: 3641444708113693615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4487955204101801726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+  m_PrefabInstance: {fileID: 3641444708113693615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6397862015559054846
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487955204101801726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8777139954052135742, guid: fa31806a84bab914e88277a7391ae75b, type: 3}
+--- !u!114 &7410936270667658946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487955204101801726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65024f20540f81e4198a8656c59400f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  bulletPrefab: {fileID: 2170922808237516931, guid: ab9a3f510b8a1084fa20c25fe94c291c, type: 3}
+  firePoint: {fileID: 0}
+  firePoint_Boss1: {fileID: 8656228209747598092}
+  firePoint_Boss2: {fileID: 3579719714424574885}
+  firePoint_Boss3: {fileID: 4686686350686770624}
+  firePoint_Boss4: {fileID: 3474571446342165937}
+  firePoint_Boss5: {fileID: 3189467906791878707}
+  fireRate: 1
+  maxHealth: 800
+--- !u!54 &-2435628738167742342
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487955204101801726}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
