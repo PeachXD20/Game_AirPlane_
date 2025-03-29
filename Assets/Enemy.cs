@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; // ใช้ UI สำหรับแถบเลือด
-using System.Collections; // เพิ่ม System.Collections เพื่อใช้ IEnumerator
 
 public class Enemy : MonoBehaviour
 {
@@ -25,9 +24,6 @@ public class Enemy : MonoBehaviour
 
     public Image healthBar; // แถบเลือด UI ของศัตรู
 
-    public AudioClip deathSound; // เสียงเมื่อศัตรูตาย
-    private AudioSource audioSource;
-
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -45,10 +41,6 @@ public class Enemy : MonoBehaviour
         {
             healthBar.fillAmount = currentHealth / maxHealth;
         }
-
-        // เพิ่ม AudioSource และตั้งค่าเสียง
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -113,6 +105,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     // ฟังก์ชันลดเลือด
     public void TakeDamage(float damage)
     {
@@ -133,21 +126,16 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        if (deathSound != null)
+        if (isBoss)
         {
-            audioSource.PlayOneShot(deathSound); // เล่นเสียงมอนสเตอร์ตาย
-            StartCoroutine(DieCoroutine()); // ใช้ Coroutine ให้เสียงเล่นจนจบก่อนทำลาย
+            Debug.Log("Boss Defeated!");
+            // อาจจะให้เปลี่ยนไปฉากใหม่ หรือให้ไอเท็มพิเศษ
         }
         else
         {
-            Debug.LogWarning("ไม่มีไฟล์เสียงสำหรับศัตรูตาย!");
-            Destroy(gameObject); // ถ้าไม่มีเสียงให้ทำลายทันที
+            Debug.Log("Enemy Destroyed!");
         }
-    }
 
-    IEnumerator DieCoroutine()
-    {
-        yield return new WaitForSeconds(deathSound.length); // รอให้เสียงเล่นจบ
-        Destroy(gameObject); // ทำลายศัตรูหลังเสียงเล่นจบ
+        Destroy(gameObject); // ลบตัวศัตรูหรือบอสออกจากเกม
     }
 }
