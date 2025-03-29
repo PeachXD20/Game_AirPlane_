@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public Transform firePoint2;
 
-    public float maxHealth = 100f; // ค่าเลือดสูงสุด
+    public float maxHealth = 1000f; // ค่าเลือดสูงสุด
     private float currentHealth; // ค่าเลือดปัจจุบัน
     public Image healthBarImage; // UI ของแถบเลือด
 

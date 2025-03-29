@@ -184,7 +184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -272.4}
+  m_AnchoredPosition: {x: 0, y: -235}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222570453
@@ -207,11 +207,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -563,7 +563,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &697281143
 RectTransform:
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3817113404153090947, guid: 72d1d84f91b922a4c85b68f0048728e0, type: 3}
-  bossPrefab: {fileID: 4487955204101801726, guid: 0dbfdc651bbc4394cb696b806e7e8e63, type: 3}
+  bossPrefab: {fileID: 3817113404153090947, guid: 05f04b650b204d34fb53e320e55eb819, type: 3}
   spawnRate: 1
   spawnRange: 18
   stopSpawningTime: 5
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2170922808237516931, guid: 99ba13c06700cbc4780d2ca365005900, type: 3}
   firePoint: {fileID: 219292259}
   firePoint2: {fileID: 689953345}
-  maxHealth: 100
+  maxHealth: 1000
   healthBarImage: {fileID: 222570453}
 --- !u!54 &1964872894
 Rigidbody:

@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Boss : MonoBehaviour
 {
+    public GameObject ui;
+    public GameObject uiWinner; // เมนูชนะ
     public float maxHealth = 600f; // เลือดสูงสุดของบอส
     private float currentHealth; // เลือดปัจจุบันของบอส
 
@@ -12,9 +15,13 @@ public class Boss : MonoBehaviour
     {
         currentHealth = maxHealth; // กำหนดค่าของเลือด
 
+                
+
+       
+
         // เพิ่ม AudioSource ให้กับบอส
         audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false; // ปิดการเล่นอัตโนมัติ
+        audioSource.playOnAwake = false;
     }
 
     public void TakeDamage(float damage)
@@ -28,22 +35,27 @@ public class Boss : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Boss is dead!"); // แสดงข้อความใน Console
-
+        Debug.Log("Boss is dead!");
+        
         if (deathSound != null)
         {
-            audioSource.PlayOneShot(deathSound); // เล่นเสียงตายของบอส
-            StartCoroutine(DieCoroutine()); // รอให้เสียงเล่นจนจบก่อนทำลายบอส
+            audioSource.PlayOneShot(deathSound);
+            ui = Instantiate(uiWinner);
+            
+            StartCoroutine(DieCoroutine());
         }
         else
         {
-            Destroy(gameObject); // ถ้าไม่มีเสียงให้ทำลายทันที
+            Destroy(gameObject);
         }
     }
 
-    System.Collections.IEnumerator DieCoroutine()
+    IEnumerator DieCoroutine()
     {
+
         yield return new WaitForSeconds(deathSound.length); // รอจนกว่าเสียงจะเล่นจบ
+        Destroy(ui);
+
         Destroy(gameObject); // ทำลายบอสหลังเสียงจบ
     }
 }
