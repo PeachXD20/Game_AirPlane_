@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 2003411303}
   - component: {fileID: 2003411302}
   m_Layer: 0
-  m_Name: AmbientSound
+  m_Name: SpaceSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,10 +912,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b8d7a3b21a36144ba963fb1744b1fad, type: 3}
+  m_Resource: {fileID: 8300000, guid: 0b8d7a3b21a36144ba963fb1744b1fad, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
