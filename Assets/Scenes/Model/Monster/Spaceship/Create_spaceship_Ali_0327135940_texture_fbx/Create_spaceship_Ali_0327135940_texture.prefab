@@ -147,6 +147,8 @@ MonoBehaviour:
   firePoint_Boss5: {fileID: 0}
   fireRate: 1
   maxHealth: 20
+  healthBar: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: ced06f261d8cdbe4d92f96879ba42497, type: 3}
 --- !u!64 &-3610069266661228990
 MeshCollider:
   m_ObjectHideFlags: 0
